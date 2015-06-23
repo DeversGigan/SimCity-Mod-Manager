@@ -1,0 +1,11 @@
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\bin\Release\SimCityMODManager.exe.config
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\bin\Release\SimCityMODManager.exe
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\bin\Release\SimCityMODManager.pdb
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\obj\Release\SimCityMODManager.Form1.resources
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\obj\Release\SimCityMODManager.Properties.Resources.resources
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\obj\Release\SimCityMODManager.csproj.GenerateResource.Cache
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\obj\Release\SimCityMODManager.exe
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\obj\Release\SimCityMODManager.pdb
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\bin\Release\NUnrar.dll
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\obj\Release\SimCityMODManager.csprojResolveAssemblyReference.cache
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\bin\Release\Ionic.Zip.dll

@@ -1,0 +1,10 @@
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\bin\Debug\SimCityMODManager.exe.config
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\bin\Debug\SimCityMODManager.exe
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\bin\Debug\SimCityMODManager.pdb
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\bin\Debug\SevenZipSharp.dll
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\obj\Debug\SimCityMODManager.csprojResolveAssemblyReference.cache
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\obj\Debug\SimCityMODManager.Form1.resources
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\obj\Debug\SimCityMODManager.Properties.Resources.resources
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\obj\Debug\SimCityMODManager.csproj.GenerateResource.Cache
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\obj\Debug\SimCityMODManager.exe
+c:\users\yo\documents\visual studio 2013\Projects\SimCityMODManager\SimCityMODManager\obj\Debug\SimCityMODManager.pdb
