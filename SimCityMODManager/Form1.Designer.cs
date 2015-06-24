@@ -56,7 +56,7 @@
             this.listView1.LabelWrap = false;
             this.listView1.Location = new System.Drawing.Point(12, 4);
             this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(265, 234);
+            this.listView1.Size = new System.Drawing.Size(265, 230);
             this.listView1.TabIndex = 0;
             this.listView1.UseCompatibleStateImageBehavior = false;
             this.listView1.View = System.Windows.Forms.View.Details;
@@ -136,7 +136,7 @@
             // 
             // Launch
             // 
-            this.Launch.Location = new System.Drawing.Point(296, 202);
+            this.Launch.Location = new System.Drawing.Point(296, 203);
             this.Launch.Name = "Launch";
             this.Launch.Size = new System.Drawing.Size(155, 23);
             this.Launch.TabIndex = 7;
@@ -148,7 +148,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(463, 250);
+            this.ClientSize = new System.Drawing.Size(463, 242);
             this.Controls.Add(this.Launch);
             this.Controls.Add(this.DeleteMod);
             this.Controls.Add(this.AddMod);
@@ -160,6 +160,7 @@
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "SimCity MOD Manager";
+            this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.Form1_FormClosed);
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 

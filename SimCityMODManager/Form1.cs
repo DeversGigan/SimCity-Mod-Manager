@@ -188,10 +188,6 @@ namespace SimCityMODManager
             {
                 Directory.CreateDirectory("Mods");
             }
-            if (!File.Exists(@"Mods\installed.txt"))
-            {
-                File.CreateText(@"Mods\installed.txt");
-            }
             if(!File.Exists("SimcityExe.cfg"))
             {
                 DialogResult drs = MessageBox.Show(this, getText("SimCityの実行ファイルを選択してください", "Please select SimCity.exe file"), "SCMM", MessageBoxButtons.OKCancel, MessageBoxIcon.Asterisk);
@@ -271,7 +267,7 @@ namespace SimCityMODManager
                 }
             }
             listView1.Items.Clear();
-            string installed = File.ReadAllText(@"Mods\installed.txt");
+            string installed = getProp().installed;
             foreach (string name in getAllModsName())
             {
                 string fn = Path.GetFileNameWithoutExtension(name);
@@ -306,16 +302,19 @@ namespace SimCityMODManager
             {
                 Directory.CreateDirectory("Mods");
             }
-            if (!File.Exists(@"Mods\installed.txt"))
+            try
             {
-                File.CreateText(@"Mods\installed.txt");
+                refreshModItems();
             }
-            refreshModItems();
+            catch {}
         }
-
+        private Properties.Settings getProp()
+        {
+            return SimCityMODManager.Properties.Settings.Default;
+        }
         public bool isModInstalled(string name)
         {
-            return File.ReadAllText(@"Mods\installed.txt").Contains(name); 
+            return getProp().installed.Contains(name); 
         }
 
         private void Inst_Click(object sender, EventArgs e)
@@ -340,7 +339,7 @@ namespace SimCityMODManager
                         installedMOD.Add(modName);
                     }
                 }
-                dialogMultiple(true,installedMOD.ToArray());
+                dialogMultiple(false,installedMOD.ToArray());
             }
         }
         private string[] getModNames(ListView.SelectedListViewItemCollection items)
@@ -366,7 +365,7 @@ namespace SimCityMODManager
             {
                 MessageBox.Show(getText("正常にインストールされました:"+modName, "The mod was installed successfully:"+modName));
             }
-            File.AppendAllText(@"Mods\installed.txt", modName + ";");
+            getProp().installed += (modName + ";");
         }
 
         private void Uninstall_Click(object sender, EventArgs e)
@@ -408,7 +407,7 @@ namespace SimCityMODManager
                     File.Delete(modDir + modF);
                 }
                 string installed = File.ReadAllText(@"Mods\installed.txt");
-                File.WriteAllText(@"Mods\installed.txt", installed.Replace(modName + ";", ""));
+                getProp().installed = getProp().installed.Replace(modName+";","");
                 if (dialog)
                 {
                     MessageBox.Show(getText("正常にアンインストールされました:"+modName, "The mod was uninstalled successfully:"+modName));
@@ -437,7 +436,6 @@ namespace SimCityMODManager
             }
             MessageBox.Show(getText("正常にインストールされました", "The mod" + (toInstall > 1 ? "s were " : " was ") + "installed successfully"));
         }
-
         private void uninstallALL_Click(object sender, EventArgs e)
         {
 
@@ -516,6 +514,11 @@ namespace SimCityMODManager
         {
             Process p = Process.Start(gameExe);
             p.WaitForExit();
+        }
+
+        private void Form1_FormClosed(object sender, FormClosedEventArgs e)
+        {
+            getProp().Save();
         }
     }
 }
